@@ -2,7 +2,7 @@ console.log("JS-OK")
 
 // Email check
 
-/*
+
 let email = ["michy@gmail.com"]
 
 email.push(prompt("inserisci indirizzo email"))
@@ -10,10 +10,10 @@ email.push(prompt("inserisci indirizzo email"))
 console.log(email);
 
 
-if (prompt.value === email[0]) {
+if (prompt === email[0]) {
     alert = "email già inserita"
 }
-*/
+
 
 // Dadi
 
@@ -31,12 +31,15 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
     dicetwo.innerHTML += dicecomputer;
 
     if (diceman > dicecomputer) {
-        console.log("Vince Giocatore");
+        console.log("User wins!");
         document.querySelector("h1").innerHTML = ("USER WINS!");
 
     } else if (diceman < dicecomputer) {
-        console.log("Vince Computer");
+        console.log("Computer wins!");
         document.querySelector("h1").innerHTML = ("PC WINS!");
+    } else if (diceman === dicecomputer) {
+        console.log("Draw!");
+        document.querySelector("h1").innerHTML = ("DRAW!");
     }
 
     // 2. display results 
