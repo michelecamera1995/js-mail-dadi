@@ -2,16 +2,17 @@ console.log("JS-OK")
 
 // Email check
 
+const usermail = prompt("Inserisci email");
+const email = ["michele@icloud.com"];
 
-let email = ["michy@gmail.com"]
+for (let i = 0; i < 1; i++) {
+    email.push = (usermail)
+    console.log(email);
 
-email.push(prompt("inserisci indirizzo email"))
+    if (usermail === email[i]) {
+        alert("Email già presente!");
+    }
 
-console.log(email);
-
-
-if (prompt === email[0]) {
-    alert = "email già inserita"
 }
 
 
