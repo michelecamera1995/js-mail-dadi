@@ -25,7 +25,6 @@ const diceresult = document.querySelector(".dice-result");
 
 document.querySelector('.btn-roll').addEventListener('click', function () {
 
-    // 1. Random number
     var diceman = Math.floor(Math.random() * 6) + 1;
     var dicecomputer = Math.floor(Math.random() * 6) + 1;
     diceone.innerHTML += diceman;
@@ -43,7 +42,6 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         document.querySelector("h1").innerHTML = ("DRAW!");
     }
 
-    // 2. display results 
 
 });
 
